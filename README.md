@@ -33,5 +33,26 @@ A fully functional **AI Virtual Keyboard** built using Python and Computer Visio
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/your-username/AI-Virtual-Keyboard.git](https://github.com/your-username/AI-Virtual-Keyboard.git)
+   git clone [[https://github.com/Sd8738/AI-Virtual-Keyboard.git](https://github.com/Sd8738/AI-Virtual-Keyboard.git)]
    cd AI-Virtual-Keyboard
+
+
+ Install Dependencies Run the following command to install the required libraries:
+ pip install opencv-python cvzone mediapipe pynput
+
+ Run the Script
+ python AI-Virtual-Keyboard.py
+
+ 🧠 How It Works
+The system captures video frames and processes them through the HandDetector module.
+
+It identifies 21 hand landmarks.
+
+It tracks the position of the Index Finger tip (Landmark 8).
+
+It checks if the finger is within the coordinates of any virtual button.
+
+It calculates the distance between Landmark 8 (Index Tip) and Landmark 12 (Middle Tip). If the distance is below the threshold, it triggers a keystroke using pynput.
+
+👨‍💻 Author
+Sumant Deshmukh LinkedIn | GitHub
